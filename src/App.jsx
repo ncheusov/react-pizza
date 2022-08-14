@@ -20,7 +20,9 @@ function App() {
                         <Sort />
                     </div>
                     <h2 className="content__title">Все пиццы</h2>
-                    <PizzaBlock />
+                    <div className="content__items">
+                        <PizzaBlock title="Мексиканская" price="555 р."/>
+                    </div>
                 </div>
             </div>
         </div>
