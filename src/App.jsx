@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 
 import Header from './components/Header';
 import Categories from './components/Categories';
@@ -10,14 +10,15 @@ import pizzas from './assets/pizzas.json';
 import './scss/app.scss';
 
 function App() {
-  //https://630001149350a1e548e944d9.mockapi.io/items
-  
-  fetch('https://630001149350a1e548e944d9.mockapi.io/items ')
-      .then(res => {
-        return res.json();
-      }).then((json) => {
-        console.log(json);
-      });
+    const [items, setIems] = useState([]);
+
+    useEffect(() => {
+        fetch('https://630001149350a1e548e944d9.mockapi.io/items ')
+        .then((res) => res.json())
+        .then((arr) => {
+            setIems(arr);
+        });
+    }, []);
 
     return (
         <div className="wrapper">
