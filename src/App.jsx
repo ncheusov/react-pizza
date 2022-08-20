@@ -10,6 +10,14 @@ import pizzas from './assets/pizzas.json';
 import './scss/app.scss';
 
 function App() {
+  //https://630001149350a1e548e944d9.mockapi.io/items
+  
+  fetch('https://630001149350a1e548e944d9.mockapi.io/items ')
+      .then(res => {
+        return res.json();
+      }).then((json) => {
+        console.log(json);
+      });
 
     return (
         <div className="wrapper">
