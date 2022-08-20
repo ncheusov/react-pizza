@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Header from './components/Header';
 import Categories from './components/Categories';
@@ -10,13 +10,14 @@ import pizzas from './assets/pizzas.json';
 import './scss/app.scss';
 
 function App() {
-  //https://630001149350a1e548e944d9.mockapi.io/items
+  const [items, setItems] = useState([]);
   
   fetch('https://630001149350a1e548e944d9.mockapi.io/items ')
       .then(res => {
         return res.json();
-      }).then((json) => {
-        console.log(json);
+      })
+      .then((arr) => {
+        setItems(arr);  
       });
 
     return (
