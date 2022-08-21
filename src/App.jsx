@@ -6,8 +6,7 @@ import Home from './pages/Home';
 import './scss/app.scss';
 
 function App() {
-    // test CodeSandbox
-    // const [items, setItems] = React.useState();
+
 
     return (
         <div className="wrapper">
