@@ -14,7 +14,7 @@ function App() {
             <Header />
             <div className="content">
                 <div className="container">
-                    <Home />
+                    <Home /> LALALA
                 </div>
             </div>
         </div>
