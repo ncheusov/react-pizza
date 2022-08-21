@@ -13,7 +13,7 @@ function App() {
             <Header />
             <div className="content">
                 <div className="container">
-                    <Home /> LALALA
+                    <Home /> 
                 </div>
             </div>
         </div>
