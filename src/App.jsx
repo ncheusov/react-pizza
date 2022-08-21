@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import Header from './components/Header';
 import Home from './pages/Home';
@@ -6,19 +6,8 @@ import Home from './pages/Home';
 import './scss/app.scss';
 
 function App() {
-<<<<<<< HEAD
-  const [items, setItems] = useState([]);
-  
-  fetch('https://630001149350a1e548e944d9.mockapi.io/items ')
-      .then(res => {
-        return res.json();
-      })
-      .then((arr) => {
-        setItems(arr);  
-      });
-=======
-    
->>>>>>> 4514049629d1506b9de9546105ccf3540203a681
+    // test CodeSandbox
+    // const [items, setItems] = React.useState();
 
     return (
         <div className="wrapper">
